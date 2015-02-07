@@ -1,0 +1,158 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#ja-page {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#ja-sidebar {
+    z-index: 1000;
+    position: fixed;
+    /*width: 0;*/
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#ja-content {
+    z-index: -1000;
+}
+
+/* Sidebar Styles */
+
+.ja-sidebar-nav {
+    /*position: absolute;*/
+    /*top: 0;*/
+    position: relative;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ja-sidebar-footer-wrapper {
+    position: relative;
+    width: 250px;
+    height: 33px;
+    margin-bottom: 30px;
+}
+
+.ja-sidebar-footer {
+    padding: 0px 15px 10px 25px;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    white-space: nowrap;
+}
+
+.ja-sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.ja-sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.ja-sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.ja-sidebar-nav li a:active,
+.ja-sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.ja-sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.ja-sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.ja-sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+/* lg-on */
+#ja-page.lg-on {
+    padding-left: 250px;
+}
+#ja-sidebar.lg-on {
+    width: 250px;
+    left: 250px;
+}
+
+/* lg-off */
+#ja-page.lg-off {
+    padding-left: 0;
+}
+#ja-sidebar.lg-off {
+    width: 0px;
+}
+
+#ja-page.sm {
+    padding-left: 0px
+}
+/* sm-off */
+#ja-sidebar.sm-off {
+    left: 0;
+}
+
+/* sm-on */
+#ja-sidebar.sm-on {
+    left: 250px;
+}
+
+#ja-content {
+    position: relative;
+    padding: 20px;
+}
+
+#ja-content.sm-on {
+    width: 100%;
+    position: absolute;
+    z-index: -1000;
+}
+
+#ja-content.sm-off {
+    position: relative;
+    margin-right: 0;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+@media(max-width:768px) {
+    #ja-page {
+        padding-left: 0px;
+    }
+
+}

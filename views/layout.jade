@@ -1,0 +1,20 @@
+doctype
+html.html-root
+  include head.jade
+body
+  block navigation  
+  #ja-page.lg.lg-on
+    #ja-sidebar.lg-on
+      block sidebar
+    //- block sidebar-toggle   
+    #ja-content
+      .blackout    
+      .container-fluid
+        .row
+          .col-md-12
+            block intro
+            block about              
+            block recent-work
+            block research
+            block resume
+            block contact

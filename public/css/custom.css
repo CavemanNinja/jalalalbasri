@@ -1,0 +1,323 @@
+/* fonts and headings */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url('/fonts/Roboto/Roboto-Thin.ttf');
+}
+@font-face {
+	font-family: 'Roboto Medium';
+    src: url('/fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+	font-family: 'Roboto Bold Italic';
+    src: url('/fonts/Roboto/Roboto-BoldItalic.ttf');
+}
+@font-face {
+	font-family: 'Roboto Condensed Light';
+    src: url('/fonts/Roboto/RobotoCondensed-Light.ttf');
+}
+@font-face {
+	font-family: 'Roboto Condensed';
+    src: url('/fonts/Roboto/RobotoCondensed-Regular.ttf');
+}
+@font-face {
+	font-family: 'Roboto Condensed Bold';
+    src: url('/fonts/Roboto/RobotoCondensed-Bold.ttf');
+}
+
+#ja-content {
+  	font-family: 'Roboto', sans-serif;
+  	font-size: 16px;
+  	color: rgba(0, 0, 0, 0.86);
+}
+
+h1 {
+	font-family: 'Roboto Thin', sans-serif;	
+}
+
+h2 {
+	/*font-family: 'Roboto Medium' sans-serif;*/
+	/*font-family: 'Roboto Condensed Bold' sans-serif;*/
+}
+
+h3 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+h4 {
+	font-family: 'Roboto Medium', sans-serif;
+}
+
+#ja-sidebar {
+	font-family: 'Roboto Medium', sans-serif;
+}
+
+.ja-menu-toggle {
+	font-size: 24px !important;
+	margin-top: -4px;
+}
+
+.ja-navbar-header {
+
+}
+
+.ja-navbar-text {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+/* colors */
+
+h2 {
+	color: #4368BE;
+}
+h3 {
+	color: #192849;
+}
+
+#ja-sidebar {
+	/*base blue*/
+	background-color: #3F51B5;
+}
+
+.ja-navbar-text {
+	/*color: #9E9E9E !important;*/
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover, 
+.nav-pills > li.active > a:focus {
+	/*active pill blue*/
+	background-color: #303F9F;
+}
+.nav-pills > li > a:hover {
+	background-color: #5C6BC0;
+}
+
+.nav-pills > li > a {
+	color: #7986CB;
+}
+.nav-pills > li.active > a {
+	color: #fff;
+}
+
+.ja-nav-pill-disabled {
+	height: 50px;
+	color: #7986CB !important;	
+}
+.ja-nav-pill-disabled:active {
+	height: 50px;
+	color: #7986CB !important;	
+}
+.ja-nav-pill-disabled:hover {
+	height: 50px;
+	color: #7986CB !important;	
+}
+
+.ja-sidebar-footer > a > i {
+	/* social gem font */
+	color: #7986CB !important;
+}
+.ja-sidebar-footer > a > i:hover {
+	color: #FFF !important;
+}
+
+.ja-menu-toggle {
+	color: #9E9E9E;
+}
+.ja-menu-toggle:hover {
+	color: #757575;
+}.ja-menu-toggle:active {
+	color: #616161;
+}
+
+#ja-page {
+	/*background-color: #f9f9f9;*/
+}
+
+.ja-jumbotron {
+	text-align: center;
+	background: #f9f9f9;
+}
+
+.ja-raised-button {
+	background-color: #3F51B5;
+	color: #FFF;
+	border-radius: 2px;
+	transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+.ja-raised-button:hover {
+	background-color: #3949AB; 
+	color: #FFF;
+}
+.ja-raised-button:focus {
+	background-color: #3949AB; 
+	color: #FFF;
+}
+.ja-raised-button:active {
+	background-color: #303F9F; 
+	color: #FFF;
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+    transition-delay: 0s;
+}
+
+.ja-thumbnail {
+	/*background-color: #f9f9f9;*/
+	border: 0px;
+	padding: 16px;
+
+  	/*position: relative;*/
+	/*display: inline-block;*/
+	/*width: 300px;*/
+	/*height: 240px;*/
+	/*vertical-align: top;*/
+	background-color: #fff;
+	box-shadow: 0px 6px 18px 0 rgba(0, 0, 0, 0.24);
+}
+
+.ja-sublime {
+	background: -webkit-linear-gradient(135deg, #d4ef3e, #21b113);
+	background: -o-linear-gradient(135deg, #d4ef3e, #21b113);
+	background: -moz-linear-gradient(135deg, #d4ef3e, #21b113); 
+	background: linear-gradient(135deg, #d4ef3e, #21b113); 
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	text-align: center;
+}
+
+.ja-bbic {
+	background: -webkit-linear-gradient(0deg, #3e9aea, #185ac5);
+	background: -o-linear-gradient(0deg, #3e9aea, #185ac5);
+	background: -moz-linear-gradient(0deg, #3e9aea, #185ac5); 
+	background: linear-gradient(0deg, #3e9aea, #185ac5); 
+	font-family: 'Roboto', sans-serif;
+	color: white;	
+	text-align: center;
+}
+
+.ja-tamioz {
+	background: -webkit-linear-gradient(225deg, #f74a63, #f4092f);
+	background: -o-linear-gradient(225deg, #f74a63, #f4092f);
+	background: -moz-linear-gradient(225deg, #f74a63, #f4092f); 
+	background: linear-gradient(225deg, #f74a63, #f4092f); 
+	font-family: 'Roboto', sans-serif;
+	color: white;	
+	text-align: center;
+}
+
+.ja-mft {
+	background: -webkit-linear-gradient(180deg, #f3f144, #d7d11a);
+	background: -o-linear-gradient(180deg, #f3f144, #d7d11a);
+	background: -moz-linear-gradient(180deg, #f3f144, #d7d11a); 
+	background: linear-gradient(180deg, #f3f144, #d7d11a); 
+	font-family: 'Roboto', sans-serif;
+	color: white;	
+	text-align: center;
+}
+
+.ja-exchange {
+	background: -webkit-linear-gradient(0deg, #f8f6f8, #c5c4c5);
+	background: -o-linear-gradient(0deg, #f8f6f8, #c5c4c5);
+	background: -moz-linear-gradient(0deg, #f8f6f8, #c5c4c5); 
+	background: linear-gradient(0deg, #f8f6f8, #c5c4c5); 
+	font-family: 'Roboto', sans-serif;
+	color: white;	
+	text-align: center;
+}
+
+
+/* POSITION AND SIZING */
+
+.ja-profile-image {
+	width: 250px;
+}
+
+.ja-thumbnail-image {
+	display: inline-block;
+}
+
+.ja-thumbnail-row {
+	display: table;
+}
+
+.ja-thumbnail-col {
+	display: table-cell;
+	vertical-align: top;
+	height: 100%;
+}
+
+.ja-navbar {
+	margin-bottom: 0px;
+	/*height: 70px;*/
+	/*vertical-align: middle;*/
+}
+
+.ja-navbar-brand {
+	/*height: 70px;*/
+	vertical-align: middle;
+}
+
+.ja-navbar-text {
+
+}
+
+#ja-page {
+	padding-top: 50px;
+}
+
+.ja-menu-toggle:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.nav-pills > li {
+	margin-top: 0px !important;
+}
+
+.nav-pills > li > a {
+	border-radius: 0;
+}
+
+.ja-profile-image {
+	padding: 30px;
+}
+
+.ja-social-gems {
+	font-size: 32px !important;
+	color: #FFF;
+	text-align: center;
+}
+
+h2 {
+	padding-top: 60px;
+	margin-top: -50px;
+}
+
+/* misc */
+
+.ja-contact-success {
+	display: none;
+}
+.ja-contact-failure {
+	display: none;
+}
+
+.blackout {
+	position: fixed;
+	top: 0; bottom: 0; right: 0; left: 0px;
+	background-color: rgba(0, 0, 0, 0.3) !important;
+	z-index: 500;
+	display: none;
+}
+
+.ja-thumbnail {
+	padding: 0px;
+}

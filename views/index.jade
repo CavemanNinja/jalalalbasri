@@ -1,0 +1,266 @@
+extend layout
+
+block navigation
+  .navbar.navbar-default.navbar-fixed-top.ja-navbar
+    .container-fluid
+      .navbar-header
+        a.navbar-brand.ja-navbar-brand: i.fa.fa-bars.ja-menu-toggle#menu-toggle
+      //- p.navbar-text.ja-navbar-text Hi! I'm Jalal Albasri
+
+block sidebar
+  a(href="#menu-toggle")
+    img.img-circle.ja-profile-image(src="/images/me.jpg")
+  .ja-sidebar-footer-wrapper
+    .ja-sidebar-footer
+      a(href="https://twitter.com/CavemanNinja", target="_blank", alt="Twitter"): i.fa.fa-twitter.ja-social-gems &nbsp&nbsp
+      a(href="https://github.com/CavemanNinja", target="_blank", alt="GitHub"): i.fa.fa-github.ja-social-gems
+      
+  ul.nav.nav-pills.nav-stacked.ja-sidebar-nav
+    li.active(role="presentation")
+      a(href="#ja-about") About
+        paper-ripple(fit) 
+    li(role="presentation")
+      a(href="#ja-recent-work") Recent Work
+        paper-ripple(fit)      
+    li(role="presentation")
+      a(href="#ja-research") Research
+        paper-ripple(fit)      
+    li(role="presentation")
+      a(href="#ja-resume") Resume
+        paper-ripple(fit)      
+    li(role="presentation")
+      a(href="#ja-contact") Contact
+        paper-ripple(fit)      
+    li.ja-nav-pill-disabled(role="presentation")
+      
+
+block sidebar-toggle
+  i.fa.fa-toggle-left.ja-menu-toggle#menu-toggle
+
+block intro
+  .jumbotron.ja-intro.ja-jumbotron#ja-home
+    h1.ja-jumbrotron-heading Hi! I'm Jalal Albasri
+    p.ja-junbotron-body
+      | I make web and mobile applications.
+      br
+      | It's nice to meet you :). 
+
+block about
+  h2.ja-about#ja-about About
+  p 
+    | I'm an application developer at Sublime Web&Mobile and developer of 
+    | Maps for Twitter for Android. 
+  p 
+    | My expertise is building fast, scalable and reliable backends Java, PHP and NodeJS
+    | that store and manipulate data and manage client web and mobile applications.
+    | I also work hard every day to produce designs that don't suck!
+  p
+    | I got my BSc. in Computer Science and Masters in Software Engineering from
+    | Sydney University in 2012 and then worked in the IT research facility at CSIRO conducting
+    | studies in CV (Computer Vision) and HCI (Human Computer Interaction).
+  p
+    | I have a cat called Chief, love heavy metal and EDM and when I'm not writing code
+    | I'm probably playing Minecraft or Dota 2!
+  p
+    | Scroll down to see some of my recent work, check out my resume and get in touch
+    | if you are interested in working together. 
+
+block recent-work
+  h2.ja-recent-work#ja-recent-work Recent Work
+  h3 Web  
+  .row.ja-thumbnail-row
+    .col-md-4.ja-thumbnail-col
+      .thumbnail.ja-thumbnail
+        .ja-sublime
+          img.img-responsive.ja-thumbnail-image(src="/images/sublime-trans.png")
+        .caption
+          h3.ja-thumbnail-header Sublime Web&Mobile
+          p Bahrain based web and mobile agency. 
+          p NodeJS, Jade, LESS, JQuery, Twitter Bootstrap.
+          p: a.btn.ja-button(href="http://www.sublimewm.com", role="button", target="_blank") 
+            | Visit Site
+    .col-md-4.ja-thumbnail-col
+      .thumbnail.ja-thumbnail
+        .ja-bbic
+          img.img-responsive.ja-thumbnail-image(src="/images/bbic-trans.png")
+        .caption
+          h3.ja-thumbnail-header BBIC
+          p Bahrain Business Incubator Centre 
+          p PHP, Joomla CMS, SQL, JQuery.
+          p: a.btn.ja-button(href="http://afternoon-falls-9745.herokuapp.com/bbic/", 
+            role="button", target="_blank") Visit Site
+    .col-md-4.ja-thumbnail-col
+      .thumbnail.ja-thumbnail
+        .ja-tamioz
+          img.img-responsive.ja-thumbnail-image(src="/images/tamioz-trans.png")
+        .caption
+          h3.ja-thumbnail-header Tamioz Group
+          p Bahrain based management consulting firm.
+          p NodeJS, HTML, CSS, JQuery, Twitter Bootstrap.
+          p Photoshop: Branding, Graphics, Logo Design. 
+          p: a.btn.ja-button(href="http://www.tamiozgroup.com/",
+           role="button", target="_blank") Visit Site
+  h3 Mobile
+  .row.ja-thumbnail-row
+    .col-md-6.ja-thumbnail-col
+      .thumbnail.ja-thumbnail
+        .ja-mft
+          img.img-responsive.ja-thumbnail-image(src="/images/mft-trans.png")
+        .caption
+          h3.ja-thumbnail-header Maps for Twitter
+          p Live Tweet Mapping.
+          p Java, Google App Engine, Twitter API, NodeJS, MongoDB.
+          p: a.btn.ja-button(
+            href="https://play.google.com/store/apps/details?id=com.jalbasri.mapsfortwitter", 
+            role="button", target="_blank") Visit Play Store
+    .col-md-6.ja-thumbnail-col
+      .thumbnail.ja-thumbnail
+        .ja-exchange
+          img.img-responsive.ja-thumbnail-image(src="/images/exchange-trans.png")
+        .caption
+          h3.ja-thumbnail-header ExchangeCam
+          p Exchange Cam uses your Android device's camera to intelligently read price tags
+            | using OCR and provide instant currency conversion.
+          p Java, OCR.
+          p: a.btn.ja-button(
+            href="https://play.google.com/store/apps/details?id=com.cavemanninja.exchangecam", 
+            role="button", target="_blank") Visit Play Store
+
+block research
+  h2.ja-research#ja-research Research
+    h3.ja-research-handsinair HandsInAir: A Wearable System for Distributed Collaboration.
+    .row
+      .col-md-3
+        img.img-responsive.ja-handsinair-image(src="/images/handsinair.jpg")        
+      .col-md-9
+        p 
+          | HandsInAir is a real-time collaborative wearable system for distributed
+          | collaboration. The system was developed to support real world scenarios in which a
+          | remote mobile helper could guide a local mobile worker in the completion of a
+          | physical task. HandsInAir implements a novel approach in supporting the mobility of
+          | both collaborators. The approach taken allowed the helper to perform gestures
+          | without the need to touch tangible objects and requiring little environmental support.
+          | The system consists of two nodes the helper and worker. The nodes are connected via
+          | a wireless network connection and partners communicate with each other via audio
+          | and visual links. In this report I review related work, and describe the technical
+          | implementation and evaluation of the system and conclude with a brief discussion of
+          | future work intended to advance the system. A fully functional prototype was built of
+          | a real time, wearable, augmented reality communication concept. Developed in C++ and
+          | utilizing OpenCV and .Net libraries. 
+    p 
+      | The system was shown at the APWCS 2011 conference in China as well as OzChi in Australia
+      | and won an Academic Prize for attaining the highest mark for a postgraduate project in 2011
+      | from the Sydney University School of IT.
+    p: a(href="/pdfs/handsinair_report.pdf") My Project Report
+    p: a(href="http://arxiv.org/abs/1112.1742") 
+        | HandsinAir: a wearable system for remote guiding. (2011) in proceedings 2011 2nd Asia-Pacific
+        | Conference on Wearable Computing Systems, in Changsha, China, March 19-20, 2011. (APWCS’11)
+
+block resume
+  h2.ja-resume#ja-resume Resume
+    h3.ja-resume-heading Education
+    p Masters IT, Software Engineering, University of Sydney, 2012, 
+      | Distinction Average 80 (While working fulltime at CSIRO)
+    p B.Sc, Computer Science, University of Sydney, 2011, 
+      | University of Sydney, Sydney, Australia Distinction Average (76)
+    p GCE (A-Levels), St. Christopher’s Senior School, Math: A, Physics: A, Chemistry: B
+
+    h3.ja-resume-heading Programming
+    p Languages: Java, Javascript, PHP, C++, C#, Visual Basic
+    p Mobile: Android
+    p CMS: Joomla (PHP), KeyStone (NodeJS)
+    p Web Backend:   NodeJS w/ Express Framework, Google App Engine (Java),  CodeIgniter (PHP),
+    p Apache Struts 2 (Java), Joomla CMS
+    p Web Frontend: Twitter Bootstrap UI, Jade Template Engine, LESS, JQuery, HTML5, CSS3
+    p Database: MongoDB, MySQL, SQLite, JDBC
+    p Other:   Linux Ubuntu/Linux Mint,  GIMP, Photoshop, Android Studio, Eclipse, Visual Studio, OpenCV
+
+    h3.ja-resume.heading Achievements
+    p 2014  Maps for Twitter, Location based tweet tracking on Google Maps published in Android Play
+      | Store.
+    p 2013  Exchange Cam, An OCR based currency converter published in Android Play Store.
+    p 2011  Certificate of Achievement for the Highest Mark in a Postgraduate Project 2011 University
+      | of Sydney School of IT
+    p: a(href="http://arxiv.org/abs/1112.1742") 
+        | 2011 HandsinAir: a wearable system for remote guiding. (2011) in proceedings 2011 2nd 
+        | Asia-Pacific Conference on Wearable Computing Systems, in Changsha, China, March 19-20, 
+        | 2011. (APWCS’11)
+    p 2010  Microsoft Research Asia Prize for Best Undergraduate Software Development Project
+
+    h3.ja-resume-heading Work History
+    
+    h4.ja-resume-work Sublime Web&Mobile
+    p.ja-resume-work-title Web and Mobile Developer, Feb 2014 - Present
+    p.ja-resume-work-languages Javascript; NodeJS & JQuery, Android; Java, PHP; Joomla CMS, 
+    | HTML, CSS & LESS
+    ul
+      li Application developer on multiple web projects including BBIC website built 
+      | in PHP and Tamioz Management Consulting website built using NodeJS and Express.
+
+    h4.ja-resume-work Highlight Solutions, Sydney
+    p.ja-resume-work-title Developer, Jan 2012 - Aug 2013
+    p.ja-resume-work-languages Java, C#, .Net, SQL Server
+    ul
+      li Rewrote RDBMS for the collection, transformation and storage of financial 
+      | data for top companies in the pharmaceutical industry including Pfizer and Astellas.
+      li Develop data analytics algorithms for the mining and visual modelling of data.
+      li Work with extremely short turnarounds and tight deadlines.
+    
+    h4.ja-resume-work  CSIRO ICT Research Centre, Marsfield, Sydney
+    p.ja-resume-work-title Analyst Programmer, Jan 2011 - Dec 2011
+    p.ja-resume-work-languages C++, OpenCV
+    ul
+      li Developed and Tested functional prototype for HandsInAir [look for video] wearable
+        | real-time collaboration system.
+      li Managed own SDLC from analysis of the existing system, gathering requirements, 
+        | design and implementation of software to evaluation and usability testing.
+      li Worked in C++, Microsoft COM and OpenCV and developed complex algorithms to 
+        | perform computer vision, network transmission, audio and video compression under 
+        | real-time performance requirements.
+      li Conducted thorough system evaluation through a usability study consisting of 
+        | experiments, interviews and questionnaires.
+      li Achieved highest mark for postgraduate project 2011 at Sydney University School of IT. 
+      li System demonstrated at the 2nd Asia Pacific Conference on Wearable Computing 
+        | Systems in China in March 2011 and associated academic paper published in conference 
+        | proceedings.
+    
+    h4.ja-resume-work Euroluce, Surrey Hills, Sydney, Nov 2010 - Jan 2011
+    p.ja-resume-work-title Web Developer
+    p.ja-resume-work-languages PHP, JS, HTML, CSS
+    ul
+      li Maintained existing e-Commerce website.
+      li Implemented responsive mobile UI.
+
+    h4.ja-resume-work Orbit Showtime Network, Bahrain
+    p.ja-resume-work-title Programming Coordinator, Sep 2006 - Jan 2008
+    p.ja-resume-work-languages VB.Net, C#, SQL
+    ul 
+      li Extend functionality of OTS television scheduling software with macros.
+      li Management of promo and commercial databases.
+      li Developed algorithm to find best promo for time gap instantly improving scheduler 
+        | efficiency by over 75% and reducing errors in scheduling.
+
+block contact 
+  h2.ja-contact#ja-contact Contact
+  p 
+    | Got something you think I'd be interested in? You can send me mail using the form below 
+    | or if thats too 2005 for you use any of the social media buttons :).
+  .col-md-6
+    .ja-contact-form
+      form.form-horizontal.contactform-form#contact-form(action="/", method="post")
+        .form-group.input-group-lg.contactform-input
+          input.form-control#name(type="text", name="name", placeholder="Your Name", required)
+        .form-group.input-group-lg.contactform-input
+          input.form-control#email(type="email", name="email", placeholder="Your Email Address", required)
+        .form-group.input-group-lg.contactform-input
+          textarea.form-control#about(rows="4" name="about", placeholder="Whats Up?", required)
+        .form-group
+          button.btn.ja-raised-button.btn-lg.contactform-input#submitbutton(type="submit", value="Post") Send Message
+             paper-ripple(fit) 
+    .ja-contact-success
+      p Thanks for getting in touch! I'll get back to you soon as!
+      a.btn.ja-button#ja-contact-again(role="button") Send Another Message
+    .ja-contact-failure
+      p Oops something went wrong!
+      a.btn.ja-button#ja-contact-tryagain(role="button") Try Again
+  
