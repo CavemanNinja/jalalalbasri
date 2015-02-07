@@ -1,6 +1,5 @@
 $(function(){
-
-	$('.contactform-form').bootstrapValidator({
+	$('#contact-form').bootstrapValidator({
 		message: 'This value is not valid',
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
@@ -18,6 +17,7 @@ $(function(){
             },
             email: {
                 validators: {
+                    message: 'The email is not valid',
                     notEmpty: {
                         message: 'Please tell us your email address.'
                     },

@@ -1,7 +1,8 @@
 $(function(){
-
 	$("#contact-form").submit(function(e) { // e(vent)
 			console.log("ajax function called");
+			$(".ja-contact-form").hide();
+			$(".ja-spinner").show();
 			var postData = $(this).serializeArray();
 			var formUrl = $(this).attr("action");
 
@@ -12,17 +13,19 @@ $(function(){
 				statusCode: {
 					200: function() {
 						// alert( "200: success" );
-						$(".ja-contact-form").hide({duration: 0});
-						$(".ja-contact-success").show({duration: 0});
+						$(".ja-spinner").hide();
+						
+						$(".ja-contact-success").show();
 					},
 					500: function() {
 						// alert("500: failure");
-						$(".ja-contact-form").hide({duration: 0});
-						$(".ja-contact-failure").show({duration: 0});
+						$(".ja-spinner").hide();
+						$(".ja-contact-failure").show();
 					}
 				}
 			});
 
+			
 			e.preventDefault();
 			// e.unbind(); //Error thrown
 		});
@@ -45,4 +48,4 @@ $(function(){
 		// });
 	});	
 
-})
+});

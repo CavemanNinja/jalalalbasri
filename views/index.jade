@@ -73,58 +73,56 @@ block recent-work
       .thumbnail.ja-thumbnail
         .ja-sublime
           img.img-responsive.ja-thumbnail-image(src="/images/sublime-trans.png")
-        .caption
+        .caption.ja-thumbnail-caption
           h3.ja-thumbnail-header Sublime Web&Mobile
           p Bahrain based web and mobile agency. 
           p NodeJS, Jade, LESS, JQuery, Twitter Bootstrap.
-          p: a.btn.ja-button(href="http://www.sublimewm.com", role="button", target="_blank") 
+          a(href="http://www.sublimewm.com", target="_blank"): paper-button.colored.ja-paper-button(role="button", tabindex='0') 
             | Visit Site
     .col-md-4.ja-thumbnail-col
       .thumbnail.ja-thumbnail
         .ja-bbic
           img.img-responsive.ja-thumbnail-image(src="/images/bbic-trans.png")
-        .caption
+        .caption.ja-thumbnail-caption
           h3.ja-thumbnail-header BBIC
           p Bahrain Business Incubator Centre 
           p PHP, Joomla CMS, SQL, JQuery.
-          p: a.btn.ja-button(href="http://afternoon-falls-9745.herokuapp.com/bbic/", 
-            role="button", target="_blank") Visit Site
+          a(href="http://afternoon-falls-9745.herokuapp.com/bbic/", target="_blank"): paper-button.colored.ja-paper-button(role="button", tabindex='0') 
+            | Visit Site
     .col-md-4.ja-thumbnail-col
       .thumbnail.ja-thumbnail
         .ja-tamioz
           img.img-responsive.ja-thumbnail-image(src="/images/tamioz-trans.png")
-        .caption
+        .caption.ja-thumbnail-caption
           h3.ja-thumbnail-header Tamioz Group
           p Bahrain based management consulting firm.
           p NodeJS, HTML, CSS, JQuery, Twitter Bootstrap.
           p Photoshop: Branding, Graphics, Logo Design. 
-          p: a.btn.ja-button(href="http://www.tamiozgroup.com/",
-           role="button", target="_blank") Visit Site
+          a(href="http://www.tamiozgroup.com/", target="_blank"): paper-button.colored.ja-paper-button(role="button", tabindex='0') 
+            | Visit Site
   h3 Mobile
   .row.ja-thumbnail-row
     .col-md-6.ja-thumbnail-col
       .thumbnail.ja-thumbnail
         .ja-mft
           img.img-responsive.ja-thumbnail-image(src="/images/mft-trans.png")
-        .caption
+        .caption.ja-thumbnail-caption
           h3.ja-thumbnail-header Maps for Twitter
           p Live Tweet Mapping.
           p Java, Google App Engine, Twitter API, NodeJS, MongoDB.
-          p: a.btn.ja-button(
-            href="https://play.google.com/store/apps/details?id=com.jalbasri.mapsfortwitter", 
-            role="button", target="_blank") Visit Play Store
+          a(href="https://play.google.com/store/apps/details?id=com.jalbasri.mapsfortwitter", target="_blank"): paper-button.colored.ja-paper-button(role="button", tabindex='0') 
+            | Visit Play Store
     .col-md-6.ja-thumbnail-col
       .thumbnail.ja-thumbnail
         .ja-exchange
           img.img-responsive.ja-thumbnail-image(src="/images/exchange-trans.png")
-        .caption
+        .caption.ja-thumbnail-caption
           h3.ja-thumbnail-header ExchangeCam
           p Exchange Cam uses your Android device's camera to intelligently read price tags
             | using OCR and provide instant currency conversion.
           p Java, OCR.
-          p: a.btn.ja-button(
-            href="https://play.google.com/store/apps/details?id=com.cavemanninja.exchangecam", 
-            role="button", target="_blank") Visit Play Store
+          a(href="https://play.google.com/store/apps/details?id=com.cavemanninja.exchangecam", target="_blank"): paper-button.colored.ja-paper-button(role="button", tabindex='0') 
+            | Visit Play Store
 
 block research
   h2.ja-research#ja-research Research
@@ -244,8 +242,10 @@ block contact
   h2.ja-contact#ja-contact Contact
   p 
     | Got something you think I'd be interested in? You can send me mail using the form below 
-    | or if thats too 2005 for you use any of the social media buttons :).
+    | or use any of the social media buttons in the sidebar :).
   .col-md-6
+    .ja-spinner
+      paper-spinner.blue(active)
     .ja-contact-form
       form.form-horizontal.contactform-form#contact-form(action="/", method="post")
         .form-group.input-group-lg.contactform-input
@@ -255,12 +255,15 @@ block contact
         .form-group.input-group-lg.contactform-input
           textarea.form-control#about(rows="4" name="about", placeholder="Whats Up?", required)
         .form-group
-          button.btn.ja-raised-button.btn-lg.contactform-input#submitbutton(type="submit", value="Post") Send Message
-             paper-ripple(fit) 
+          .ja-submit-wrapper
+            button.btn.ja-raised-button.btn-lg.contactform-input#submitbutton(type="submit", value="Post") Send Message
+              paper-ripple(fit)
     .ja-contact-success
       p Thanks for getting in touch! I'll get back to you soon as!
-      a.btn.ja-button#ja-contact-again(role="button") Send Another Message
+      a#ja-contact-again(role="button"): paper-button.colored.ja-paper-button(role="button", tabindex='0') 
+        | Send Another Message
     .ja-contact-failure
       p Oops something went wrong!
-      a.btn.ja-button#ja-contact-tryagain(role="button") Try Again
+      a#ja-contact-tryagain(role="button"): paper-button.colored.ja-paper-button(role="button", tabindex='0') 
+            | Try Again
   
