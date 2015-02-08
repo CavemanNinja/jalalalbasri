@@ -1,34 +1,46 @@
 $(function(){
 	$("#contact-form").submit(function(e) { // e(vent)
-			console.log("ajax function called");
-			$(".ja-contact-form").hide();
-			$(".ja-spinner").show();
-			var postData = $(this).serializeArray();
-			var formUrl = $(this).attr("action");
 
-			$.ajax({
-				type: 'POST',
-				url: formUrl,
-				data: postData,
-				statusCode: {
-					200: function() {
-						// alert( "200: success" );
-						$(".ja-spinner").hide();
-						
-						$(".ja-contact-success").show();
-					},
-					500: function() {
-						// alert("500: failure");
-						$(".ja-spinner").hide();
-						$(".ja-contact-failure").show();
-					}
+		
+
+		console.log("ajax function called");
+		
+		var postData = $(this).serializeArray();
+		var formUrl = $(this).attr("action");
+
+		$.ajax({
+			type: 'POST',
+			url: formUrl,
+			data: postData,
+			beforeSend: function() {
+				console.log($('#name').val() + ", " + $('#email').val() + ", " + $('#about').val() );
+				if ($('#name').val() == "" || $('#email').val() == "" || $('#about').val() == "") {
+					return false;
+					console.log('empty form');
+				} else {
+					$(".ja-contact-form").hide();
+					$(".ja-spinner").show();
 				}
-			});
-
-			
-			e.preventDefault();
-			// e.unbind(); //Error thrown
+			},
+			statusCode: {
+				200: function() {
+					// alert( "200: success" );
+					$(".ja-spinner").hide();
+					
+					$(".ja-contact-success").show();
+				},
+				500: function() {
+					// alert("500: failure");
+					$(".ja-spinner").hide();
+					$(".ja-contact-failure").show();
+				}
+			}
 		});
+
+		
+		e.preventDefault();
+		// e.unbind(); //Error thrown
+	});
 
 	$("#ja-contact-tryagain").click(function() {
 		$(".ja-contact-failure").hide({duration: 0});

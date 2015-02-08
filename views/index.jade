@@ -111,7 +111,7 @@ block recent-work
           p Live Tweet Mapping.
           p Java, Google App Engine, Twitter API, NodeJS, MongoDB.
           a(href="https://play.google.com/store/apps/details?id=com.jalbasri.mapsfortwitter", target="_blank"): paper-button.colored.ja-paper-button(role="button", tabindex='0') 
-            | Visit Play Store
+              | Visit Play Store
     .col-md-6.ja-thumbnail-col
       .thumbnail.ja-thumbnail
         .ja-exchange
@@ -241,22 +241,21 @@ block resume
 block contact 
   h2.ja-contact#ja-contact Contact
   p 
-    | Got something you think I'd be interested in? You can send me mail using the form below 
-    | or use any of the social media buttons in the sidebar :).
+    | Drop me a line if you've got something you think I'd be interested in :).
   .col-md-6
     .ja-spinner
       paper-spinner.blue(active)
     .ja-contact-form
       form.form-horizontal.contactform-form#contact-form(action="/", method="post")
-        .form-group.input-group-lg.contactform-input
+        .form-group.contactform-input
           input.form-control#name(type="text", name="name", placeholder="Your Name", required)
-        .form-group.input-group-lg.contactform-input
+        .form-group.contactform-input
           input.form-control#email(type="email", name="email", placeholder="Your Email Address", required)
-        .form-group.input-group-lg.contactform-input
-          textarea.form-control#about(rows="4" name="about", placeholder="Whats Up?", required)
+        .form-group.contactform-input
+          textarea.form-control#about(rows="4", name="about", placeholder="Whats Up?", required)
         .form-group
           .ja-submit-wrapper
-            button.btn.ja-raised-button.btn-lg.contactform-input#submitbutton(type="submit", value="Post") Send Message
+            button.btn.ja-raised-button.contactform-input#submitbutton(type="submit", value="Post") Send Message
               paper-ripple(fit)
     .ja-contact-success
       p Thanks for getting in touch! I'll get back to you soon as!
