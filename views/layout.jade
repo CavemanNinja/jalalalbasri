@@ -3,17 +3,15 @@ html.html-root
   include head.jade
 body
   block navigation  
-  #ja-page.lg.lg-on
-    #ja-sidebar.lg-on
+  #ja-page.lg.lg-off
+    #ja-sidebar.lg-off
       block sidebar
-    //- block sidebar-toggle   
-    block intro-new
+    .blackout    
+    block intro
     #ja-content
-      .blackout    
       .container-fluid
         .row
           .col-md-12
-            //- block intro
             block about              
             block recent-work
             block research

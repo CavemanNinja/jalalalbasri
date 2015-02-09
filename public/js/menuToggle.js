@@ -41,16 +41,27 @@ $(function(){
 		},
 		exit: function() {
 			$('#ja-page').addClass('lg');
-			$('#ja-sidebar').removeClass('sm-on').removeClass('sm-off');
-			$('#ja-content').removeClass('sm-on').removeClass('sm-off');
-			$('#ja-page').addClass('lg-on');
-			$('#ja-sidebar').addClass('lg-on');
+			
+			if ($('#ja-sidebar').hasClass('sm-on')) {
+				$('#ja-sidebar').removeClass('sm-on').removeClass('sm-off');
+				$('#ja-content').removeClass('sm-on').removeClass('sm-off');
+				$('#ja-page').addClass('lg-on');
+				$('#ja-sidebar').addClass('lg-on');
+			} else {
+				$('#ja-sidebar').removeClass('sm-on').removeClass('sm-off');
+				$('#ja-content').removeClass('sm-on').removeClass('sm-off');
+				$('#ja-page').addClass('lg-off');
+				$('#ja-sidebar').addClass('lg-off');
+			}
+			
+
+			
 			$('.html-root').removeClass('no-scroll');
 			$('.blackout').fadeOut();
 		}
 	});
 
-	$("#ja-content").click(function(e){
+	$(".blackout").click(function(e){
 		if($('#ja-sidebar').hasClass('sm-on')){
 			smallSidebarOFf();	
 		}

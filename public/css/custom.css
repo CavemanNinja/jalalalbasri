@@ -46,7 +46,7 @@ h1 {
 h2 {
 	/*font-family: 'Roboto Medium' sans-serif;*/
 	/*font-family: 'Roboto Condensed Bold' sans-serif;*/
-	font-family: 'Roboto Light' sans-serif;
+	/*font-family: 'Roboto Light' sans-serif;*/
 }
 
 h3 {
@@ -64,7 +64,11 @@ h4 {
 
 .ja-menu-toggle {
 	font-size: 24px !important;
-	margin-top: -4px;
+	/*margin-top: -4px;*/
+}
+
+.ja-social-gems {
+
 }
 
 .ja-navbar-header {
@@ -93,14 +97,16 @@ h4 {
 
 h2 {
 	color: #4368BE;
+	color: #009688;
 }
 h3 {
-	color: #192849;
+	/*color: #192849;*/
 }
 
 #ja-sidebar {
 	/*base blue*/
-	background-color: #3F51B5;
+	/*background-color: #3F51B5;*/
+	background-color: #EEEEEE;
 }
 
 .ja-navbar-text {
@@ -111,14 +117,17 @@ h3 {
 .nav-pills > li.active > a:hover, 
 .nav-pills > li.active > a:focus {
 	/*active pill blue*/
-	background-color: #303F9F;
+	/*background-color: #303F9F;*/
+	background-color: #009688;
 }
 .nav-pills > li > a:hover {
-	background-color: #5C6BC0;
+	/*background-color: #5C6BC0;*/
+	background-color: #26A69A;
 }
 
 .nav-pills > li > a {
-	color: #7986CB;
+	/*color: #7986CB;*/
+	color: #424242;
 }
 .nav-pills > li.active > a {
 	color: #fff;
@@ -137,25 +146,32 @@ h3 {
 	color: #7986CB !important;	
 }
 
-.ja-sidebar-intro {
-	color: #7986CB;
-}
-
-.ja-sidebar-footer > a > i {
-	/* social gem font */
-	color: #7986CB !important;
-}
-.ja-sidebar-footer > a > i:hover {
-	color: #FFF !important;
-}
-
 .ja-menu-toggle {
 	color: #9E9E9E;
-}
-.ja-menu-toggle:hover {
+}.ja-menu-toggle:hover{
 	color: #757575;
 }.ja-menu-toggle:active {
 	color: #616161;
+}
+
+.ja-social-twitter {
+	color: #2196F3;
+}
+.ja-social-twitter:hover {
+	color: #1E88E5;
+}
+.ja-social-twitter:active {
+	color: #1976D2;
+}
+
+.ja-social-github {
+	color: #9C27B0;
+}
+.ja-social-github:hover {
+	color: #8E24AA;
+}
+.ja-social-github:active {
+	color: #7B1FA2;
 }
 
 #ja-page {
@@ -163,7 +179,7 @@ h3 {
 }
 
 .ja-paper-button {
-	color: #3F51B5;
+	color: #009688;
 	font-size: 14px;
 }
 
@@ -173,7 +189,7 @@ h3 {
 }
 
 .ja-button {
-	color: #3F51B5;
+	color: #009688;
 	border-radius: 2px;
 	transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -187,7 +203,7 @@ h3 {
 }
 
 .ja-raised-button {
-	background-color: #3F51B5;
+	background-color: #009688;
 	color: #FFF;
 	border-radius: 2px;
 	transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -195,15 +211,15 @@ h3 {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 .ja-raised-button:hover {
-	background-color: #3949AB; 
+	background-color: #00897B; 
 	color: #FFF;
 }
 .ja-raised-button:focus {
-	background-color: #3949AB; 
+	background-color: #00897B; 
 	color: #FFF;
 }
 .ja-raised-button:active {
-	background-color: #303F9F; 
+	background-color: #00796B; 
 	color: #FFF;
 	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
     transition-delay: 0s;
@@ -272,7 +288,7 @@ h2 {
 }
 
 .ja-profile-image {
-	width: 250px;
+	width: 225px;
 }
 
 .ja-thumbnail-image {
@@ -315,8 +331,17 @@ h2 {
 	vertical-align: middle;
 }
 
-.ja-navbar-text {
+.ja-social-gems {
+	padding: 8px;
+	font-size: 32px !important;
+}
 
+.ja-navbar-right {
+	padding-right: 10px;
+}
+
+.ja-navbar-text {
+	24px;
 }
 
 #ja-page {
@@ -338,12 +363,6 @@ h2 {
 
 .ja-profile-image {
 	padding: 30px;
-}
-
-.ja-social-gems {
-	font-size: 32px !important;
-	color: #FFF;
-	text-align: center;
 }
 
 h2 {
@@ -387,21 +406,45 @@ h2 {
 	display: none;
 }
 
-.ja-jumbotron-new {
-	padding-top: 280px;
-	padding-bottom: 280px;
+.ja-intro{
+	vertical-align: middle;
 	margin-bottom: 0px;
 	background-image: url('/images/stars.jpg');
 	background-size: cover;
+	color: #fff;
+	width: 100%;
 }
 
-.ja-jumbotron-new {
-	color: #fff;
+.ja-intro-row {
+	display: table;
+	table-layout: fixed;
 	text-align: center;
+	height: 100%;
+}
+
+.ja-intro-col {
+	display: table-cell;
+	vertical-align: middle;
+	float: none;
+	text-align: center;
+}
+
+.ja-intro-body {
+	text-align: center;
+}
+
+.ja-intro-heading {
+	font-family: 'Roboto Thin', sans-serif;
+	font-size: 48px;
 	font-weight: 200;
 }
 
-.ja-junbotron-body-new {
-	font-weight: 500 !important;
+.ja-intro-text {
 	font-family: 'Roboto Light', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.ja-contact-col {
+	text-align: center;
 }

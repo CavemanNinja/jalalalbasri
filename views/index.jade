@@ -3,12 +3,15 @@ extend layout
 block navigation
   .navbar.navbar-default.navbar-fixed-top.ja-navbar
     .container-fluid
-      .navbar-header
+      .navbar-header.pull-left
         a.navbar-brand.ja-navbar-brand: i.fa.fa-bars.ja-menu-toggle#menu-toggle
+      .navbar-header.pull-right.ja-navbar-right  
+        a(href="https://twitter.com/CavemanNinja", target="_blank", alt="Twitter"): i.fa.fa-twitter.ja-social-gems.ja-social-twitter
+        a(href="https://github.com/CavemanNinja", target="_blank", alt="GitHub"): i.fa.fa-github.ja-social-gems.ja-social-github
       //- p.navbar-text.ja-navbar-text Hi! I'm Jalal Albasri
 
 block sidebar
-  a(href="#ja-home")
+  //- a(href="#ja-home")
     img.img-circle.ja-profile-image(src="/images/me.jpg")
   //- .ja-sidebar-intro
     p.ja-sidebar-intro-heading Hi! I'm Jalal Albasri
@@ -16,10 +19,7 @@ block sidebar
       | I make web and mobile applications.
       br
       | It's nice to meet you :). 
-  .ja-sidebar-footer-wrapper
-    .ja-sidebar-footer
-      a(href="https://twitter.com/CavemanNinja", target="_blank", alt="Twitter"): i.fa.fa-twitter.ja-social-gems &nbsp&nbsp
-      a(href="https://github.com/CavemanNinja", target="_blank", alt="GitHub"): i.fa.fa-github.ja-social-gems
+  
       
   ul.nav.nav-pills.nav-stacked.ja-sidebar-nav
     li.active(role="presentation")
@@ -42,22 +42,22 @@ block sidebar
 
 block sidebar-toggle
   i.fa.fa-toggle-left.ja-menu-toggle#menu-toggle
-
-block intro-new
-  .jumbotron.ja-intro-new.ja-jumbotron-new#ja-home
-    h1.ja-jumbrotron-heading-new Hi! I'm Jalal Albasri
-    p.ja-junbotron-body-new
-      | I make web and mobile applications.
-      br
-      | It's nice to meet you :). 
+  .ja-sidebar-footer-wrapper
+    .ja-sidebar-footer
+      a(href="https://twitter.com/CavemanNinja", target="_blank", alt="Twitter"): i.fa.fa-twitter.ja-social-gems &nbsp&nbsp
+      a(href="https://github.com/CavemanNinja", target="_blank", alt="GitHub"): i.fa.fa-github.ja-social-gems
 
 block intro
-  .jumbotron.ja-intro.ja-jumbotron#ja-home
-    h1.ja-jumbrotron-heading Hi! I'm Jalal Albasri
-    p.ja-junbotron-body
-      | I make web and mobile applications.
-      br
-      | It's nice to meet you :). 
+  .container-fluid.ja-intro#ja-intro
+    .row.ja-intro-row
+      .col-md-12.col-sm-12.col-xs-12.ja-intro-col
+        .ja-intro-body
+          img.img-circle.ja-profile-image(src="/images/me.jpg")
+          h1.ja-intro-heading Hi! I'm Jalal Albasri
+          p.ja-intro-text
+            | I make web and mobile applications.
+            br
+            | It's nice to meet you :). 
 
 block about
   h2.ja-about#ja-about About
@@ -256,7 +256,7 @@ block contact
   h2.ja-contact#ja-contact Contact
   p 
     | Drop me a line if you've got something you think I'd be interested in :).
-  .col-md-6
+  .col-md-6.col-xs-12.ja-contact-col
     .ja-spinner
       paper-spinner.blue(active)
     .ja-contact-form
