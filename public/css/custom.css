@@ -28,6 +28,10 @@
 	font-family: 'Roboto Condensed Bold';
     src: url('/fonts/Roboto/RobotoCondensed-Bold.ttf');
 }
+@font-face {
+	font-family: 'Roboto Light';
+	src: url('fonts/Roboto/Roboto-Light.ttf');
+}
 
 #ja-content {
   	font-family: 'Roboto', sans-serif;
@@ -42,6 +46,7 @@ h1 {
 h2 {
 	/*font-family: 'Roboto Medium' sans-serif;*/
 	/*font-family: 'Roboto Condensed Bold' sans-serif;*/
+	font-family: 'Roboto Light' sans-serif;
 }
 
 h3 {
@@ -71,6 +76,17 @@ h4 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 30px;
 	text-align: center;
+}
+
+.ja-sidebar-intro {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	font-size: 14px;
+}
+
+.ja-sidebar-intro-heading {
+	font-size: 16px;
 }
 
 /* colors */
@@ -119,6 +135,10 @@ h3 {
 .ja-nav-pill-disabled:hover {
 	height: 50px;
 	color: #7986CB !important;	
+}
+
+.ja-sidebar-intro {
+	color: #7986CB;
 }
 
 .ja-sidebar-footer > a > i {
@@ -365,4 +385,23 @@ h2 {
 	text-align: center;
 	margin: 40px;
 	display: none;
+}
+
+.ja-jumbotron-new {
+	padding-top: 280px;
+	padding-bottom: 280px;
+	margin-bottom: 0px;
+	background-image: url('/images/stars.jpg');
+	background-size: cover;
+}
+
+.ja-jumbotron-new {
+	color: #fff;
+	text-align: center;
+	font-weight: 200;
+}
+
+.ja-junbotron-body-new {
+	font-weight: 500 !important;
+	font-family: 'Roboto Light', sans-serif;
 }

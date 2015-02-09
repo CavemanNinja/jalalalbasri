@@ -8,8 +8,14 @@ block navigation
       //- p.navbar-text.ja-navbar-text Hi! I'm Jalal Albasri
 
 block sidebar
-  a(href="#menu-toggle")
+  a(href="#ja-home")
     img.img-circle.ja-profile-image(src="/images/me.jpg")
+  //- .ja-sidebar-intro
+    p.ja-sidebar-intro-heading Hi! I'm Jalal Albasri
+    p.ja-sidebar-intro-text
+      | I make web and mobile applications.
+      br
+      | It's nice to meet you :). 
   .ja-sidebar-footer-wrapper
     .ja-sidebar-footer
       a(href="https://twitter.com/CavemanNinja", target="_blank", alt="Twitter"): i.fa.fa-twitter.ja-social-gems &nbsp&nbsp
@@ -36,6 +42,14 @@ block sidebar
 
 block sidebar-toggle
   i.fa.fa-toggle-left.ja-menu-toggle#menu-toggle
+
+block intro-new
+  .jumbotron.ja-intro-new.ja-jumbotron-new#ja-home
+    h1.ja-jumbrotron-heading-new Hi! I'm Jalal Albasri
+    p.ja-junbotron-body-new
+      | I make web and mobile applications.
+      br
+      | It's nice to meet you :). 
 
 block intro
   .jumbotron.ja-intro.ja-jumbotron#ja-home
