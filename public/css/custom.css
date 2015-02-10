@@ -28,10 +28,7 @@
 	font-family: 'Roboto Condensed Bold';
     src: url('/fonts/Roboto/RobotoCondensed-Bold.ttf');
 }
-@font-face {
-	font-family: 'Roboto Light';
-	src: url('fonts/Roboto/Roboto-Light.ttf');
-}
+
 
 #ja-content {
   	font-family: 'Roboto', sans-serif;
@@ -431,6 +428,7 @@ h2 {
 
 .ja-intro-body {
 	text-align: center;
+	padding-bottom: 100px;
 }
 
 .ja-intro-heading {
