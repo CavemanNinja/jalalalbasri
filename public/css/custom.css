@@ -76,7 +76,6 @@ h4 {
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-size: 30px;
-	text-align: center;
 }
 
 .ja-sidebar-intro {
@@ -93,7 +92,6 @@ h4 {
 /* colors */
 
 h2 {
-	color: #4368BE;
 	color: #009688;
 }
 h3 {
@@ -335,10 +333,6 @@ h2 {
 
 .ja-navbar-right {
 	padding-right: 10px;
-}
-
-.ja-navbar-text {
-	24px;
 }
 
 #ja-page {

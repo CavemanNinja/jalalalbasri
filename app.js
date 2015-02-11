@@ -4,6 +4,7 @@ var errorhandler = require('errorhandler');
 var morgan = require('morgan');
 var nodemailer = require('nodemailer');
 var bodyparser = require('body-parser');
+var path = require('path');
 
 var app = express();
 var env = process.env.NODE_ENV || 'development';
@@ -11,7 +12,8 @@ var port = process.env.PORT || 3000;
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, '/public')));
+app.use('/bower_components', express.static(path.join(__dirname, '/bower_components')));
 app.use(morgan('dev'));
 app.use(bodyparser());
 
