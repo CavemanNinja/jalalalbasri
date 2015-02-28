@@ -1,0 +1,19 @@
+{
+  "name": "jalalalbasri",
+  "version": "0.0.1",
+  "homepage": "https://github.com/CavemanNinja/jalalalbasri",
+  "authors": [
+    "Jalal Albasri"
+  ],
+  "description": "personal site",
+  "main": "app.js",
+  "keywords": [
+    "jalalalbasri"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "bootstrap": "~3.3.2",
+    "fontawesome": "~4.3.0"
+  }
+}
