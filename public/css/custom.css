@@ -94,6 +94,9 @@ h4 {
 h2 {
 	color: #009688;
 }
+.ja-workspace {
+	color: #009688;	
+}
 h3 {
 	/*color: #192849;*/
 }
@@ -292,6 +295,8 @@ h2 {
 
 .ja-thumbnail-row {
 	/*display: table;*/
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 .ja-thumbnail-col {
@@ -439,4 +444,17 @@ h2 {
 
 .ja-contact-col {
 	text-align: center;
+}
+
+.ja-italic {
+	font-style: italic;
+}
+
+.ja-fab {
+	vertical-align: middle;
+	background: #009688;
+}
+
+.resume-title {
+	display: inline-block;
 }
