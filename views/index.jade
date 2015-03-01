@@ -174,10 +174,17 @@ block research
 
 block resume
   
-  h2.resume-title.ja-resume#ja-resume
+  h2.resume-title.ja-resume#ja-resume Resume
+    //- a(href="/pdfs/albasri_resume.pdf", download="jalal_albasri_resume.pdf")
+    //-   paper-fab.ja-fab(mini, icon="file-download", title="Downlaod Resume", aria-label="Download Resume")
+    //- | &nbsp Resume
+  p
     a(href="/pdfs/albasri_resume.pdf", download="jalal_albasri_resume.pdf")
-      paper-fab.ja-fab(mini, icon="file-download", title="Downlaod Resume", aria-label="Download Resume")
-    | &nbsp Resume
+        paper-button.ja-raised-button(raised) 
+          span
+            i.fa.fa-file-pdf-o &nbsp&nbsp
+          span
+            |     Download PDF
   h3.ja-resume-heading Education
   p Masters IT, Software Engineering, University of Sydney, 2012, 
     | Distinction Average 80 (While working fulltime at CSIRO)
